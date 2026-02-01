@@ -17,8 +17,8 @@ To load it directly in Python:
 ```python
 from transformers import pipeline
 
-sentiment_model = pipeline("sentiment-analysis", model="Suhen/bert-finetuned-imdb")
-print(sentiment_model("I loved this movie!"))
+classifier = pipeline("text-classification", model="Suhen/bert-finetuned-imdb")
+print(classifier("I loved this movie!"))
 ```
 
 ---
